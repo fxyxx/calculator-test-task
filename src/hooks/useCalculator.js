@@ -26,8 +26,12 @@ const useCalculator = () => {
         calculatedResult = await contract.add(a, b);
         setResult(a + b);
       } else if (operation === "subtract") {
-        calculatedResult = await contract.subtract(a, b);
-        setResult(a - b);
+        if (a < b) {
+          setResult("Error");
+        } else {
+          calculatedResult = await contract.subtract(a, b);
+          setResult(a - b);
+        }
       } else if (operation === "multiply") {
         calculatedResult = await contract.multiply(a, b);
         setResult(a * b);
