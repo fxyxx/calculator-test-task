@@ -32,3 +32,5 @@ yarn dev
 
 ```
 6. Open your browser and visit http://localhost:example to see the application running.
+
+# Live deployment link https://calculator-test-task.vercel.app/
