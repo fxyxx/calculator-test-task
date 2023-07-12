@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply flex flex-col justify-center items-center gap-4;
+    @apply w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12;
+
+    box-shadow: 0px 0px 10px 0px rgba(209, 209, 209, 1);
+    height: 60%;
+    border-radius: 24px;
+    background-color: #f3f4f6;
+  }
+  .navbar {
+    @apply fixed top-0 right-0 w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12;
+
+    padding: 16px;
+  }
+}
